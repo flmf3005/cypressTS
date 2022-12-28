@@ -1,0 +1,15 @@
+{
+  "name": "cypress-ts",
+  "packageManager": "yarn@3.3.1",
+  "scripts": {
+    "cyopen": "cypress open",
+    "cyrun": "cypress run",
+    "clean": "rm -r cypress/downloads cypress/results cypress/screenshots cypress/videos"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.2.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "typescript": "^4.9.4"
+  }
+}
