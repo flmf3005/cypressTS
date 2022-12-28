@@ -71,7 +71,7 @@ declare global {
        * @param numero
        *
        */
-      validaCartaoExibido(numero: string): Chainable<any>;
+      validaSeCartaoExibido(numero: string): Chainable<any>;
     }
   }
 }

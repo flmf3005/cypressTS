@@ -14,6 +14,6 @@ Cypress.Commands.add('validaModalNovoContatoExibido', () => {
   cy.modalNovoContato().should('be.visible');
 });
 
-Cypress.Commands.add('validaCartaoExibido', (numero: string) => {
+Cypress.Commands.add('validaSeCartaoExibido', (numero: string) => {
   cy.cartaoContemNumero(numero).should('be.visible');
 });

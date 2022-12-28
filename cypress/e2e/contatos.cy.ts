@@ -12,7 +12,7 @@ describe('Adicionar Novo Contato', () => {
     cy.preencherWhatsapp('91239456');
     cy.preencherAssunto('Assunto Teste');
     cy.clicarCadastrar();
-    cy.validaCartaoExibido('91239456');
+    cy.validaSeCartaoExibido('91239456');
   });
 
   it.only('ao clicar em novo contato devo visualizar o modal de criação', () => {
