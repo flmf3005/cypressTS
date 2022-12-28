@@ -45,3 +45,15 @@ Cypress.Commands.add('cadastrarButton', () => {
 Cypress.Commands.add('cartaoContemNumero', (numero: string) => {
   cy.get('[class="subtitle is-6"').contains(numero);
 });
+
+Cypress.Commands.add('todosCartoes', () => {
+  cy.get('[class="subtitle is-6"');
+});
+
+Cypress.Commands.add('numeroBuscaInput', () => {
+  cy.get('[placeholder="Número do Whats"]');
+});
+
+Cypress.Commands.add('buscarButton', () => {
+  cy.get('[class="button is-primary"]');
+});

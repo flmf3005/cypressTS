@@ -146,6 +146,47 @@ declare global {
        *
        */
       cartaoContemNumero(numero: string): Chainable<any>;
+
+      /**
+       * Busca todos os cartões de contato
+       *
+       * Located at support/commands/selectors.ts
+       * @example
+       * cy.todosCartoes();
+       *
+       * @default
+       * cy.get('[class="subtitle is-6"');
+       *
+       * @param numero
+       *
+       */
+      todosCartoes(): Chainable<any>;
+
+      /**
+       * Seleciona o input de Busca do Numero do Whatsapp
+       *
+       * Located at support/commands/selectors.ts
+       * @example
+       * cy.numeroBuscaInput();
+       *
+       * @default
+       * cy.get('[placeholder="Número do Whats"]');
+       *
+       */
+      numeroBuscaInput(): Chainable<any>;
+
+      /**
+       * Seleciona o botão Buscar
+       *
+       * Located at support/commands/selectors.ts
+       * @example
+       * cy.buscarButton();
+       *
+       * @default
+       * cy.get('[class="button is-primary"]');
+       *
+       */
+      buscarButton(): Chainable<any>;
     }
   }
 }
