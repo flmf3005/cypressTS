@@ -29,3 +29,7 @@ Cypress.Commands.add('preencherAssunto', (assunto: string) => {
 Cypress.Commands.add('clicarCadastrar', () => {
   cy.cadastrarButton().click();
 });
+
+Cypress.Commands.add('preencherNumeroBusca', (numero: string) => {
+  cy.numeroBuscaInput().type(numero);
+});

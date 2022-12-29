@@ -115,6 +115,21 @@ declare global {
        *
        */
       clicarCadastrar(): Chainable<any>;
+
+      /**
+       * Preenche o input Numero do Whatsapp de Busca com o parâmetro 'numero'
+       *
+       * Located at support/commands/commands.ts
+       * @example
+       * cy.preencherNumeroBusca('91239456');
+       *
+       * @default
+       * cy.numeroBuscaInput().type(numero);
+       *
+       * @param numero
+       *
+       */
+      preencherNumeroBusca(numero: string): Chainable<any>;
     }
   }
 }
