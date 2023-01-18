@@ -15,7 +15,7 @@ describe('Adicionar Novo Contato', () => {
     cy.validaSeCartaoExibido('91239456');
   });
 
-  it('ao clicar em novo contato devo visualizar o modal de criação', () => {
+  it('ao buscar um contato somente um card deve ser exibido', () => {
     cy.realizarLogin();
     cy.preencherNumeroBusca('985555555');
     cy.buscarButton().click();
